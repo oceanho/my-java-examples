@@ -1,0 +1,12 @@
+# 健康监控
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "info,health,prometheus"
+  endpoint:
+    nacos-discovery:
+      cache:
+        time-to-live: 1000ms
+    health:
+      show-details: always
